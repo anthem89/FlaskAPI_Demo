@@ -6,6 +6,7 @@ import json
 
 app = Flask(__name__)
 
+# Test Route
 @app.route('/test/', methods=['GET', 'POST'])
 def test():
     address = str(escape(request.args.get('address', None).replace("_", " ")))
