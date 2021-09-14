@@ -18,4 +18,8 @@ def test():
     return ret
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=3000)
+    # # To Run on local host
+    # app.run(host='localhost', port=3000)
+
+    # Deployed version
+    app.run(threaded=True, port=5000)
