@@ -1,7 +1,8 @@
 import geopandas as gpd
 from neighborhood import *
 
-def ReturnGeoSpatialData(address, distance, distanceUnit):
+def ReturnGeoSpatialData(address, distance=1, distanceUnit='miles'):
+
     #location of the shape file
     infile_shp='./Shape_Files/Boston_Neighborhoods-shp'
     #geopandas read shape file and convert to geodataframe
