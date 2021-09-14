@@ -1,5 +1,5 @@
 import geopandas as gpd
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from shapely import wkt
 import pandas as pd
 import pathlib
@@ -70,11 +70,11 @@ class neighborhood_of_a_point:
         df = {'buffer centroid': [self.address + " buffer"]}
         self.buffer_gdf = gpd.GeoDataFrame(df, geometry=[self.buffer])
 
-    def plot_buffer(self):
-        f = plt.figure()
-        ax = plt.gca()
-        self.buffer_gdf.boundary.plot(ax=ax)
-        self.coordinates_gdf.plot(marker='o', color='red', ax=ax)
+    # def plot_buffer(self):
+    #     f = plt.figure()
+    #     ax = plt.gca()
+    #     self.buffer_gdf.boundary.plot(ax=ax)
+    #     self.coordinates_gdf.plot(marker='o', color='red', ax=ax)
 
     def set_gdf(self, gdf_data):
         self.gdf = gdf_data
@@ -118,11 +118,11 @@ class neighborhood_of_a_point:
     def get_neighborhoods(self):
         return self.neighborhoods_gdf
 
-    def plot_neighborhoods(self):
-        assert self.neighborhoods_gdf is not None
-        f = plt.figure(figsize=(8, 8))
-        ax = plt.gca()
-        self.buffer_gdf.boundary.plot(ax=ax, color='blue')
-        self.coordinates_gdf.plot(marker='o', color='red', ax=ax)
-        self.neighborhoods_gdf.boundary.plot(ax=ax, color='black')
-        plt.show()
+    # def plot_neighborhoods(self):
+    #     assert self.neighborhoods_gdf is not None
+    #     f = plt.figure(figsize=(8, 8))
+    #     ax = plt.gca()
+    #     self.buffer_gdf.boundary.plot(ax=ax, color='blue')
+    #     self.coordinates_gdf.plot(marker='o', color='red', ax=ax)
+    #     self.neighborhoods_gdf.boundary.plot(ax=ax, color='black')
+    #     plt.show()
