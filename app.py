@@ -20,7 +20,7 @@ def test():
     # A welcome message to test our server
 @app.route('/')
 def index():
-    return "<h1>Welcome to geospatial-api</h1>"
+    return "<h1>Welcome to the GeoSpatial API</h1>"
 
 if __name__ == '__main__':
     # Deployed version
