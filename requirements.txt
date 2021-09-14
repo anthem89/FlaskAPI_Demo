@@ -6,7 +6,6 @@ Shapely==1.7.1
 pandas==1.1.2
 MarkupSafe==2.0.1
 Fiona==1.8.20
-GDAL==3.3.2
 gunicorn==20.1.0
 itsdangerous==2.0.1
 pathlib==1.0.1
